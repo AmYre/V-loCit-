@@ -1,0 +1,1281 @@
+*
+{
+	font-family: Roboto, 'arial black', arial, verdana, 'sans-serif'; 
+}
+
+html{
+    background: url("img/Background3.jpg") no-repeat center center fixed; 
+    background-size: cover;
+  
+}
+
+/******************************HEADER AVEC IDENTITE DU SITE SUR BANNIERE FIXE - TITRE ET LOGO **********************************/
+
+header{
+    position: sticky;
+	z-index: 5; 
+	height: 130px;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	background-color: rgba(255, 255, 255, 0.808);
+}
+
+.banner-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    margin: auto;
+    width : 300px;
+    height: 80px;
+}
+
+.logo1{
+    position: sticky;
+    margin-top: 20px;
+    width : 100px;
+    height: 80px;
+    right : 100vw;
+}
+
+.logo2{
+    position: sticky;
+    width : 200px;
+    height: 100px;
+    left : 100vw;
+    margin-top: 5px;
+}
+
+h2{
+    font-size : 1.3em;
+    font-weight: 500;
+    text-align: center;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.795);
+    margin: 0;
+}
+
+/******************************SECTION D'ACCUEIL AVEC TUTO SUR SLIDER**********************************/
+
+#chevron-gche{
+    position: relative;
+    top : 200px;
+    left : 50px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 1px rgba(9, 148, 55, 0.596);
+    width : 100px;
+}
+
+#chevron-gche:hover{
+    transform: scale(1.2);
+    text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.705);
+}
+
+#chevron-dte:hover{
+    transform: scale(1.2);
+    text-shadow: -5px -5px 1px rgba(255, 255, 255, 0.705);
+}
+
+#chevron-dte{
+    position: relative;
+    top : 200px;
+    left : 25px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: -5px -5px 1px rgba(9, 148, 55, 0.596);
+    width : 100px;
+}
+
+#play-btn{
+    position: relative;
+    top : 10px;
+    left : 380px;
+    font-size: 40px;
+    color: rgba(248, 248, 248, 0.698);
+    text-shadow: 5px 5px 1px rgba(9, 148, 55, 0.596);
+}
+
+#play-btn:hover{
+    transform: scale(1.2);
+    text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.705);
+}
+
+#pause-btn{
+        position: relative;
+        top:10px;
+        left : 380px;
+        font-size: 40px;
+        color: rgba(248, 248, 248, 0.698);
+    text-shadow: 5px 5px 1px rgba(9, 148, 55, 0.596);
+}
+
+#pause-btn:hover{
+    transform: scale(1.2);
+    text-shadow: 5px 5px 1px rgba(255, 255, 255, 0.705);
+}
+
+#slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 100px;
+}
+
+.slider {
+    height: 450px;
+    width : 800px;
+    overflow: hidden;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+    box-shadow: 0px 0px 55px 0px rgb(0, 0, 0);
+    border-radius: 10px; 
+}
+
+.list-img
+{
+    list-style: none; 
+    display: inline;
+}
+
+.slider-img{
+    height: 450px;
+    width : 800px;
+    border-radius: 10px;  
+}
+
+
+/******************************SECTION CENTRALE MAP AND MAP ASIDE**********************************/
+
+#corps{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top:180px;
+}
+
+.voile{
+    position: absolute;
+    height:700px;
+    width: 1000px;
+    background-color: rgba(95, 177, 214, 0.692);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+#map{
+    height: 700px;
+    width: 1000px;
+    border-radius: 15px; 
+    box-shadow: 0px 0px 55px 0px rgb(0, 0, 0);
+    margin-bottom: 50px;
+    z-index: 1;
+}
+
+#map-aside{
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 55px 0px rgb(0, 0, 0);
+    background: linear-gradient(217deg, rgba(154, 163, 121, 0.8), rgba(155, 165, 136, 0) 70.71%),
+    linear-gradient(127deg, rgba(201, 235, 201, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(120, 202, 198, 0.8), rgba(83, 204, 143, 0) 70.71%);
+    margin-bottom: 50px;
+}
+
+/*************************STATION INFORMATIONS************************************************/
+
+.aside-title{
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 35px;;
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 5px rgba(9, 148, 55, 0.596);
+    font-weight : 500;
+    font-size: 1.3em;
+}
+
+.station-label{
+    margin-left: 30px;
+    margin-right: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.p-name{
+    margin-left: 10px;
+    display: inline;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.705);
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.404);
+}
+
+.p-address{
+    margin-left: 10px;
+    display: inline;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.705);
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.404);
+}
+
+.p-bikes{
+    margin-left: 10px;
+    display: inline;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.705);
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.404);
+}
+
+.p-stands{
+    margin-left: 10px;
+    display: inline;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.705);
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.404);
+}
+
+.hr{
+    width: 50%;
+}
+
+/***************************USER INFORMATIONS*************************************/
+
+.user-title{
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 50px;;
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 5px rgba(9, 148, 55, 0.596);
+    font-weight : 500;
+    font-size: 1.3em;
+}
+
+/* Animation : la consigne "tremble en rouge" en cas de non indication du nom et du prénom dans le formulaire*/
+
+@keyframes toggle {
+    from {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(10px);
+    }
+
+    20% {
+        transform: translateX(-10px);
+    }
+
+    30% {
+        transform: translateX(10px);
+    }
+
+    40% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    60% {
+        transform: translateX(-10px);
+    }
+
+    70% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    90% {
+        transform: translateX(10px);
+    }
+
+    to {
+        transform: translate(0px);
+        color: red;
+    }
+}
+
+.nom{
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.prenom{
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 30px;
+}
+
+.input span{
+    margin-top: 30px;
+}
+
+.info-btn{
+    margin-top: 50px;
+    margin-left: auto;
+    height: 50px;
+    width: 200px;
+    border-radius: 5px;
+    background-color:  rgba(18, 121, 168, 0.404);
+    box-shadow: 0px 0px 150px 0px rgba(0, 174, 255, 0.836);
+    cursor : pointer;
+    transition: all .2s ease-in-out;
+}
+
+.info-btn:hover{
+    transform: scale(1.1); 
+    background-color: rgba(18, 121, 168, 0.596);
+    color : white;
+}
+
+#station-info span{
+    
+    font-weight: normal;
+}
+
+.warning{
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.712);
+    text-shadow: 0px 1px 2px rgba(250, 250, 250, 0.404);
+}
+
+.warning p{
+    margin-top: 40px;
+}
+
+.impossible{
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.712);
+    text-shadow: 0px 1px 2px rgba(250, 250, 250, 0.404);
+}
+
+.impossible p{
+    margin-top: 40px;
+}
+
+
+/******************************DERNIERE SECTION RESERVATION AVEC SIGNATURE ET DECOMPTE**********************************/
+
+#resa{
+    height: 400px;
+    width: 1000px;
+    background: linear-gradient(217deg, rgba(154, 163, 121, 0.8), rgba(155, 165, 136, 0) 70.71%),
+    linear-gradient(127deg, rgba(201, 235, 201, 0.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(120, 202, 198, 0.8), rgba(83, 204, 143, 0) 70.71%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    margin-top: 250px; 
+    box-shadow: 0px 0px 55px black;
+}
+
+.sign-title{
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 30px;
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 5px rgba(9, 148, 55, 0.596);
+    font-weight : 500;
+    font-size: 1.6em;
+}
+
+#canvas{
+    border: 2px solid rgba(154, 206, 184, 0.842);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px black;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#belt{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#val-btn{
+    width: 150px;
+    height:40px;
+    background-color: white ;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 15px;
+}
+
+#val-btn:hover {
+    background-color: rgba(30, 255, 0, 0.733) ;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    transform: scale(1.1); 
+}
+
+#annul-btn{
+    width: 150px;
+    height:40px;
+    background-color: white ;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    margin-top: 15px;
+}
+
+#annul-btn:hover{
+    background-color: rgba(255, 0, 0, 0.733) ;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    transform: scale(1.1); 
+}
+
+.confirm{
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 60px;
+    color: rgba(255, 255, 255, 0.692);
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.404);
+    font-weight : 500;
+    font-size: 1.8em;
+}
+
+.user-stored{
+    font-size: 1.8em;
+    font-weight : 700;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 5px rgba(9, 148, 55, 0.596);
+}
+
+.station-stored{
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 5px rgba(9, 148, 55, 0.596);
+    font-weight : 700;
+    font-size: 1em;
+}
+
+.counting{
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 50px;
+    color: rgba(255, 255, 255, 0.705);
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.404);
+    font-weight : 500;
+    font-size: 1.4em;
+}
+
+#timer
+{
+    color: rgba(255, 255, 255, 0.698);
+    text-shadow: 5px 5px 5px rgba(9, 148, 55, 0.596);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.back{
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 60px;
+    color: rgba(0, 0, 0, 0.582);
+    font-weight : 500;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.back-btn{
+    width: 80px;
+    height:30px;
+    background-color: white ;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+.back-btn:hover{
+    background-color: rgba(204, 64, 64, 0.616) ;
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    transform: scale(1.1); 
+}
+
+.p-annulation{
+    color: rgba(201, 3, 3, 0.712);
+    text-shadow: 0px 1px 2px rgba(250, 250, 250, 0.404);
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 1.8em;
+    text-shadow: 0px 2px 1px rgba(110, 15, 15, 0.5);
+}
+
+/***********FOOTER*************************/
+
+
+.footer{
+    width: 100% ;
+    height: 30px;
+    padding-top: 10px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-style: italic;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.623);
+    box-shadow: 0px 0px 55px 0px rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.808);
+    color: rgb(0, 0, 0);
+}
+
+.footer-title{
+    font-size: 1.2;
+    font-weight: bold;
+    font-style: none;
+    color:  rgba(16, 88, 146, 0.74);
+}
+
+
+/*************************************************MEDIAQUERIES*************************************************/
+
+@media all and (max-width: 480px) 
+{
+    .logo{
+        position: relative;
+        top : 0px;
+        width : 200px;
+        height: 50px;
+    }
+
+    header{
+        height: 50px;
+    }
+
+    h2{
+        display: none;
+    }
+
+    .logo1{
+        display: none;
+    }
+    
+    .logo2{
+        display: none;
+    }
+
+    .banner-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        height: 300px;
+        width : 350px;
+    }
+
+    .slider-img{
+        height: 300px;
+        width : 350px;
+    }
+
+    #chevron-gche{
+        display: none;
+    }
+
+    #chevron-dte{
+        display: none;
+    }
+    
+    .fa-pause-circle:before{
+        display: none;
+    }
+    
+    .fa-pause-circle:before{
+        display: none;
+    }
+
+    #corps{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:180px;
+    }
+
+    .cadre{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .voile{
+        height:350px;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #map{
+        height: 350px;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #map-aside{
+        height: auto;
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .p-address{
+        font-size: 0.8em;
+    }
+
+    .user-title{
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight : 500;
+        font-size: 1.1em;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        position: relative;
+        left : 65px;
+    }
+
+    .input span{
+        position: relative;
+        right: 40px;
+        margin-top: 10px;
+    }
+    
+    .info-btn{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        right: 45px;
+    }
+
+    #resa{
+        height: 350px;
+        width: 300px;
+    }
+
+    #val-btn{
+        width: 100px;
+        margin-top: 45px;
+    }
+    
+    #annul-btn{
+        width: 100px;
+        margin-top: 45px;
+    }
+
+    #canvas {
+        margin-top: 5px;
+        width: 280px;
+    }
+
+    .sign-title{
+        letter-spacing: 2px;
+        padding-top: 20px;
+    }
+
+    .confirm{
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight : 500;
+        font-size: 1.1em;
+    }
+    
+    .user-stored{
+        font-weight : 700;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+    }
+    
+    .station-stored{
+        font-size: 0.8em;
+    }
+    
+    .counting{
+        letter-spacing: 0px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 20px;
+        font-weight : 500;
+        font-size: 1.1em;
+    }
+    
+    #timer
+    {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .back{
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 20px;
+        color: rgba(0, 0, 0, 0.582);
+        font-weight : 500;
+        font-style: italic;
+        font-size: 0.8em;
+    }
+
+    .p-annulation{
+        font-size: 1.2em;
+    }
+
+    .footer{
+        padding-top: 15px;
+        font-size: 0.7em;
+    }
+
+}
+
+@media all and (min-width: 480px) and (max-width: 640px) /*==============================TAILLE 2=================================*/
+{
+
+    .logo{
+        position: relative;
+        top : 2px;
+        width : 250px;
+        height: 75px;
+    }
+
+    header{
+        height: 80px;
+    }
+
+    h2{
+        display: none;
+    }
+
+    .logo1{
+        display: none;
+    }
+    
+    .logo2{
+        display: none;
+    }
+
+    .banner-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        height: 350px;
+        width : 400px;
+    }
+
+    .slider-img{
+        height: 350px;
+        width : 400px;
+    }
+
+    #play-btn{
+        position: relative;
+        top : 10px;
+        left : 180px;
+    }
+    
+    #pause-btn{
+        position: relative;
+        top:10px;
+        left : 180px;
+    }
+
+    #chevron-gche{
+        width: 1px ;
+        left: 10px;
+        top : 150px;
+    }
+
+    #chevron-dte{
+        width: 1px ;
+        left: -30px;
+        top : 150px;
+    }
+
+    #corps{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:180px;
+    }
+
+    .cadre{
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+    .voile{
+        height:350px;
+        width: 400px;
+    }
+    
+    #map{
+        height: 350px;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #map-aside{
+        height: auto;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .user-title{
+        letter-spacing: 0px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight : 500;
+        font-size: 1.3em;
+    }
+
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        position: relative;
+        left : 70px;
+    }
+
+    .input span{
+        margin-top: 20px;
+    }
+    
+    .info-btn{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        right: 45px;
+    }
+
+    #resa{
+        height: 350px;
+        width: 400px;
+    }
+
+    #canvas {
+        margin-top: 5px;
+        width: 350px;
+    }
+
+    .sign-title{
+        letter-spacing: 2px;
+        padding-top: 20px;
+    }
+
+    .confirm{
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight : 500;
+        font-size: 1.3em;
+    }
+    
+    .user-stored{
+        font-weight : 700;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+    }
+    
+    .station-stored{
+        font-size: 0.8em;
+    }
+    
+    .counting{
+        letter-spacing: 2px;
+        line-height: 30px;
+        text-align: center;
+        padding-top: 20px;
+        font-weight : 500;
+        font-size: 1.3em;
+    }
+    
+    #timer
+    {
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
+    .back{
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 20px;
+        color: rgba(0, 0, 0, 0.582);
+        font-weight : 500;
+        font-style: italic;
+        font-size: 1em;
+    }
+
+    .p-annulation{
+        font-size: 1.3em;
+    }
+
+    .footer{
+        padding-top: 15px;
+        font-size: 0.7em;
+    }
+
+}
+
+@media all and (min-width: 640px) and (max-width: 840px) /*===============================TAILLE 3========================================*/
+{
+
+    h2{
+        font-size : 1.2em;
+        letter-spacing: 1px;
+    }
+
+    .logo1{
+        display: none;
+    }
+    
+    .logo2{
+        display: none;
+    }
+
+    .banner-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider {
+        height: 350px;
+        width : 600px;
+    }
+
+    .slider-img{
+        height: 350px;
+        width : 600px;
+    }
+
+    #play-btn{
+        position: relative;
+        top : 10px;
+        left : 280px;
+    }
+    
+    #pause-btn{
+            position: relative;
+            top:10px;
+            left : 280px;
+    }
+
+    #chevron-gche{
+        width: 1px ;
+        left: 10px;
+        top : 150px;
+    }
+
+    #chevron-dte{
+        width: 1px ;
+        left: -30px;
+        top : 150px;
+    }
+
+    #corps{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:180px;
+    }
+
+    .cadre{
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+    .voile{
+        height:350px;
+        width: 600px;
+    }
+    
+    #map{
+        height: 350px;
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #map-aside{
+        height: auto;
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .user-title{
+        margin-top: 20px;
+    }
+    
+    .input span{
+        margin-top: 20px;
+    }
+    
+    .info-btn{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #resa{
+        height: 350px;
+        width: 600px;
+    }
+
+    #canvas {
+        margin-top: 5px;;
+    }
+
+    .confirm{
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight : 500;
+        font-size: 1.3em;
+    }
+    
+    .user-stored{
+        font-size: 1.2em;
+    }
+    
+    .station-stored{
+        font-size: 1em;
+    }
+    
+    .counting{
+        line-height: 30px;
+        padding-top: 20px;
+        font-size: 1.3em;
+    }
+    
+    .back{
+        letter-spacing: 0px;
+        padding-top: 20px;
+        font-size: 1em;
+    }
+
+    .p-annulation{
+        font-size: 1.5em;
+    }
+
+    .footer{
+        padding-top: 15px;
+        font-size: 0.7em;
+    }
+}
+
+@media all and (min-width: 840px) and (max-width: 1080px)
+{
+
+    #corps{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top:180px;
+    }
+
+    .cadre{
+        margin-right: auto;
+        margin-left: auto;
+        }
+
+    .voile{
+        height:450px;
+        width: 800px;
+    }
+
+    #map{
+        height: 450px;
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #map-aside{
+        height: auto;
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media all and (min-width: 1080px) and (max-width: 1280px)
+{
+
+    .cadre{
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .voile{
+        height:600px;
+        width: 600px;
+    }
+
+    #map{
+        height: 600px;
+        width: 600px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #map-aside{
+        height: auto;
+        width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media all and (min-width: 840px) and (max-width: 1280px) /*=================================TAILLE 4========================================*/
+{
+    #chevron-gche{
+        width: 1px ;
+        left: 10px;
+    }
+
+    #chevron-dte{
+        width: 1px ;
+        left: -30px;
+    }
+
+    .user-title{
+        margin-top: 25px;
+    }
+    
+    .input{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        position: relative;
+        left : 70px;
+    }
+
+    .input span{
+        margin-top: 20px;
+    }
+    
+    .info-btn{
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        right: 45px;
+    }
+
+    .p-name{
+        font-weight : 700;
+        letter-spacing: 2px;
+        font-size: 1.1em;
+    }
+
+    .p-address{
+        font-weight : 700;
+        letter-spacing: 2px;
+        font-size: 0.8em;
+    }
+
+    .p-bikes{
+        font-weight : 700;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+    }
+
+    .p-stands{
+        font-weight : 700;
+        letter-spacing: 2px;
+        font-size: 1.2em;
+    }
+
+    #resa{
+        height: 350px;
+        width: 800px;
+    }
+
+    #canvas {
+        margin-top: 5px;;
+    }
+
+    .confirm{
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 30px;
+        font-weight : 500;
+        font-size: 1.3em;
+    }
+    
+    .user-stored{
+        font-size: 1.2em;
+    }
+    
+    .station-stored{
+        font-size: 1em;
+    }
+    
+    .counting{
+        line-height: 30px;
+        padding-top: 20px;
+        font-size: 1.3em;
+    }
+    
+    .back{
+        letter-spacing: 0px;
+        padding-top: 20px;
+        font-size: 1em;
+    }
+
+    .p-annulation{
+        font-size: 1.5em;
+    }
+
+    .footer{
+        padding-top: 15px;
+        font-size: 0.7em;
+    }
+
+}

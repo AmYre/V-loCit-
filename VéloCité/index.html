@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+        integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+        crossorigin=""/>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+        <meta name="title" content="VéloCité, Le réseau de location de vélo qui vous met la tête dans le guidon!">
+        <meta name="description" content="Bienvenue sur VéloCité, le meilleur réseau de location de vélo. Reservez et consultez les disponibilités en temps réel!">
+        <meta name="keywords" content="Location de vélos, Vélo en location, Louer vélos">
+    </head>
+
+    <body>
+
+        <header>
+            <div id="banner">
+                <span class="banner-flex">
+                    <img src="img/logo1.png" class="logo1" alt="logo homme sur un vélo">
+                        <span class="title-flex">
+                            <img src="img/titre.png" class="logo" alt="logo du site vélocité">
+                            <h2 class="h2">Le réseau de location de vélo qui vous met la tête dans le guidon!</h2>
+                        </span>
+                    <img src="img/logo2.png" class="logo2" alt="logo couple en vélo">
+                </span>     
+            </div>
+        </header>
+
+        <section id="slider">                                  	
+               
+            <div>
+                <span class="fas fa-chevron-left" id="chevron-gche"></span>
+            </div>
+                         
+            <div class="cadre">
+
+                <ul class="slider">
+                   <li class="list-img"><img src="img/img0.png" class="slider-img" alt="Voici un guide pour comprendre comment fonctionne VéloCité"></li>
+                   <li class="list-img"><img src="img/img1.png" class="slider-img" alt="Cliquez d'abord sur une station de votre choix"></li>
+                   <li class="list-img"><img src="img/img2.png" class="slider-img" alt="Puis entrez votre nom et prénom dans le formulaire qui s'affiche"></li>
+                   <li class="list-img"><img src="img/img3.png" class="slider-img" alt="Confirmez maintenant votre reservation par une signature"> </li>
+                   <li class="list-img"><img src="img/img4.png" class="slider-img" alt="Félicitation, il ne vous reste plus qu'à récupérer votre vélo"></li>
+                </ul>
+
+                <span class="far fa-play-circle" id="play-btn"></span>
+                <span class="far fa-pause-circle" id="pause-btn"></span> 
+                      
+            </div>
+            
+            <div>
+                <span class="fas fa-chevron-right" id="chevron-dte"></span>
+            </div>
+
+        </section>
+                
+        <section id="corps">
+
+            <div class="cadre">
+                <div class="voile">
+                </div>
+                <div id="map">
+                </div>
+            </div>
+
+            <div id="map-aside">
+
+                <div id="station-info">
+                    <h3 class="aside-title">Cliquez sur une station pour voir ses informations</h3>
+                    <p class="station-label">Station : <span class="p-name"></span></p>
+                    <p class="station-label">Adresse : <span class="p-address"></span></p>
+                    <p class="station-label">Vélos disponible : <span class="p-bikes"></span></p>
+                    <p class="station-label">Places disponible : <span class="p-stands"></span></p>
+                </div>
+                
+                <div id="user-info">
+
+                    <div class="form">
+                        <hr class="hr">
+                        <h3 class="user-title">Entrez votre Nom et Prénom pour réserver</h3>
+                        <form class="input">   
+                            <span class="nom">Votre Nom : <input id="nom"  type="text" required></span>
+                            <span class="prenom">Votre Prénom : <input id="prenom" type="text" required></span>
+                            <button type="reset" class="info-btn">Réservez</button>
+                        </form>
+                    </div>
+
+                    <div class="warning">
+                        <hr class="hr">
+                        <p><span class="user-stored"></span>, vous avez déjà une reservation pour la station <span class="station-stored">address</span>.</p>
+                        <p>Si vous désirez changer de station veuillez d'abord annuler cette reservation. <button type='button' class='back-btn'>Annuler</button> </p>
+                    </div>
+
+                    <div class="impossible">
+                        <hr class="hr">
+                        <p>Nous sommes désolé, il n'y a actuellemnt aucune possibilité de reserver sur cette station.</p>
+                        <p>Pour être sur de pouvoir réserver votre vélo, cliquez sur les marqueurs verts.</p>
+                    </div>
+
+                    <p class="p-annulation">Votre réservation à bien été annulée</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="resa">
+            
+            <div class="signature">
+                <h3 class="sign-title">Signez pour valider votre reservation</h3>
+                <div class="canvas-contain">
+                    <canvas id="canvas" width="400px" height="200px"></canvas>
+                    <span id="belt">
+                        <button id="annul-btn" type="button">Annuler</button>
+                        <button id="val-btn" type="button">Valider</button>
+                    </span>
+                </div>
+            </div>
+
+            <div class="confirmation">
+                <p class='confirm'><span class="user-stored"></span> , votre réservation à bien été prise en compte !</p>
+                <p class='counting'>Votre vélo à la station <span class="station-stored"></span>, est réservé pendant encore <span id='timer'></span> minutes</p>
+                <p class='back'>Si vous changez d'avis ou désirez réserver d'une station différente, cliquez sur <button type='button' class='back-btn'>Annuler</button></p>
+            </div>
+
+            <p class="p-annulation">Votre réservation à bien été annulée</p>
+
+        </section>
+
+        <footer>
+            <p class="footer">© Copyright 2019 - All rights reserved   |   <span class="footer-title">AMIR PROJET 3</span>   |   Parcours Openclassrooms DEV WEB Junior</p>
+        </footer>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+
+        
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/hideSections.js"></script>
+        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/station.js"></script>
+        <script type="text/javascript" src="js/form.js"></script>
+        <script type="text/javascript" src="js/canvas.js"></script>
+        <script type="text/javascript" src="js/timer.js"></script>
+        
+
+    </body>
+
+</html>
